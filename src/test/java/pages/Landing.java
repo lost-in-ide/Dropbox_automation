@@ -9,6 +9,9 @@ public class Landing extends Page {
     @FindBy(xpath = "//*[@href='https:/login']")
     private WebElement signinLink;
 
+    @FindBy(xpath = "//*[@id='sign-up-in']")
+    private WebElement signUpIn;
+
     @FindBy(xpath="//*[@href='https:/business/try']")
     private WebElement tryForFreeBtn;
 
@@ -26,21 +29,12 @@ public class Landing extends Page {
 
     public Login signIn() {
         try {
-            click(signinLink);
-        } catch (TimeoutException e) {
             click(burgerMenu);
             click(signinLink);
+        } catch (TimeoutException e) {
+            click(signUpIn);
         }
         return new Login();
     }
 
-    public void clickOnElement(String element) {
-        switch(element.toLowerCase()) {
-            case("sign in"):
-                signIn();
-                break;
-            default:
-                System.out.println("Error: this scenario is undefined");
-        }
-    }
 }

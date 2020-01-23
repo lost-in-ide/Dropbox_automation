@@ -4,6 +4,8 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static support.TestContext.getWait;
+
 
 public class Homepage extends Page {
 
@@ -17,6 +19,7 @@ public class Homepage extends Page {
     //I don't like this workaround!
     public boolean isLoggedIn() {
         try {
+            getWait(5);
             accountMenu.isDisplayed();
         } catch (StaleElementReferenceException e) {
             accountMenu.isDisplayed();

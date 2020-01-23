@@ -22,7 +22,7 @@ public class UIStepdefs {
     }
     
     @And("I login to {string} account")
-    public void iLoginToAccount(String path) {
+    public void iLoginToAccount(String path) throws InterruptedException {
         new Login().fillSignInForm(path);
     }
 
@@ -33,12 +33,18 @@ public class UIStepdefs {
 
     @And("I click on {string} link")
     public void iClickOnLink(String element) {
-        new Login().googleSignIn();
-
+        switch(element.toLowerCase()) {
+            case "sign in":
+                new Landing().signIn();
+                break;
+            case "sign in with google":
+                new Login().googleSignIn();
+                break;
+        }
     }
 
     @And("I Login with invalid password")
-    public void iLoginWithInvalidPassword() {
+    public void iLoginWithInvalidPassword() throws InterruptedException {
         new Login().fillWrongPassword();
     }
 
@@ -53,10 +59,5 @@ public class UIStepdefs {
     }
 
 
-    @And("I Login with {string}")
-    public void iLoginWith(String scenario) {
-
-
-    }
 }
 

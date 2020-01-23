@@ -51,16 +51,20 @@ public class Login extends Page {
             case "existing":
                 fillTheField(emailTextField, getData("login").get("email"));
                 fillTheField(passwordTextField, getData("login").get("password"));
+                click(signInBtn);
                 break;
             //the following happens only when tested manually:
             case "non-existing":
                 fillTheField(emailTextField, getData("login").get("nonexistingemail"));
                 fillTheField(passwordTextField, getData("login").get("nonexistingpassword"));
+                click(signInBtn);
+                break;
+            case "google":
+                new GoogleSignIn().googleSignIn();
                 break;
             default:
                 System.out.println("Error: This scenario is not defined");
         }
-        click(signInBtn);
         return this;
     }
 
@@ -102,21 +106,13 @@ public class Login extends Page {
     }
 
 
-    public Login googleSignIn() {
+    public Homepage googleSignIn() {
         click(googleSignInBtn);
         switchToNewWindow();
-
-
-
-
-
-        return this;
-
+        new GoogleSignIn().googleSignIn();
+        return new Homepage();
     }
 
-
-
-    //TODO git ignore login.yml
 
 
 

@@ -24,7 +24,7 @@ public class Page {
     }
 
     public void click(WebElement element) {
-        getWait(3).until(ExpectedConditions.elementToBeClickable(element));
+        getWait(2).until(ExpectedConditions.elementToBeClickable(element));
         try {
             element.click();
         } catch (WebDriverException e) {
@@ -34,15 +34,6 @@ public class Page {
 
     public boolean isClickable(WebElement element) {
         return element.isDisplayed() && element.isEnabled();
-    }
-
-    public boolean isDisplayed(WebElement element) {
-        try {
-            element.isDisplayed();
-        } catch (StaleElementReferenceException e) {
-            getWait(3).until(ExpectedConditions.elementToBeClickable(element));
-        }
-       return isDisplayed(element);
     }
 
     public boolean isPageLoaded(WebDriver driver) {
@@ -63,6 +54,10 @@ public class Page {
             newWindow = iterator.next();
         }
         getDriver().switchTo().window(newWindow);
+    }
+
+    public void switchToDefaultWindow() {
+        getDriver().switchTo().window(getDriver().getWindowHandles().iterator().next());
     }
 
     public void fillTheField(WebElement field, String data) {

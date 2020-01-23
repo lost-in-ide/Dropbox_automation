@@ -33,6 +33,7 @@ public class TestContext {
         return new WebDriverWait(driver, timeout);
     }
 
+    //TODO: set up pageLoadWait
 
     public static void initialize(String browser, boolean isHeadless) {
         switch (browser) {

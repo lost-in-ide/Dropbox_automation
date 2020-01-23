@@ -28,6 +28,9 @@ Feature: UI login
   @login_ui_5 @smoke
   Scenario: Sign in with Google
     And I click on "sign in with Google" link
+    Then I verify login successful
+
+
 
 
 #  seems to happen only when tested manually, so the following has been removed from test suite:
