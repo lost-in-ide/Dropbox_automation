@@ -1,8 +1,8 @@
 package pages;
 
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import static support.TestContext.getWait;
 
@@ -16,14 +16,8 @@ public class Homepage extends Page {
     private WebElement leftPanel;
 
 
-    //I don't like this workaround!
     public boolean isLoggedIn() {
-        try {
-            getWait(5);
-            accountMenu.isDisplayed();
-        } catch (StaleElementReferenceException e) {
-            accountMenu.isDisplayed();
-        }
+        getWait(3).until(ExpectedConditions.stalenessOf(accountMenu));
         return accountMenu.isDisplayed();
 }
 

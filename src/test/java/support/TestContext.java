@@ -26,14 +26,17 @@ public class TestContext {
     }
 
     public static JavascriptExecutor getExecutor() {
-        return (JavascriptExecutor) driver;   //casting, specifying the type
+        return (JavascriptExecutor) driver;   //casting - specifying the type
     }
 
     public static WebDriverWait getWait(int timeout) {
         return new WebDriverWait(driver, timeout);
     }
 
-    //TODO: set up pageLoadWait
+    public static WebDriverWait getPageLoadWait() {
+        int timeout = Integer.parseInt(getData("config").get("PageLoad"));
+        return new WebDriverWait(driver, timeout);
+    }
 
     public static void initialize(String browser, boolean isHeadless) {
         switch (browser) {
@@ -43,6 +46,7 @@ public class TestContext {
 
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--start-maximized");
+                chromeOptions.addArguments("--incognito");
 
                 if (isHeadless) {
                     chromeOptions.setHeadless(true);

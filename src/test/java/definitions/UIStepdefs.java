@@ -22,7 +22,7 @@ public class UIStepdefs {
     }
     
     @And("I login to {string} account")
-    public void iLoginToAccount(String path) throws InterruptedException {
+    public void iLoginToAccount(String path) {
         new Login().fillSignInForm(path);
     }
 
@@ -44,7 +44,7 @@ public class UIStepdefs {
     }
 
     @And("I Login with invalid password")
-    public void iLoginWithInvalidPassword() throws InterruptedException {
+    public void iLoginWithInvalidPassword() {
         new Login().fillWrongPassword();
     }
 

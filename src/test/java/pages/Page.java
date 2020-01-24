@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
@@ -40,13 +39,7 @@ public class Page {
         return (getExecutor().executeScript("return document.readyState").equals("complete"));
     }
 
-    public void waitForPageToLoad() {
-        if (! isPageLoaded(getDriver())) {
-            getWait(60);
-        }
-    }
-
-    //hadling popup window below:
+    //handling popup window below:
     public void switchToNewWindow() {
         Iterator<String> iterator = getDriver().getWindowHandles().iterator();
         String newWindow = iterator.next();
@@ -63,7 +56,4 @@ public class Page {
     public void fillTheField(WebElement field, String data) {
         field.sendKeys(data);
     }
-
-
-
 }

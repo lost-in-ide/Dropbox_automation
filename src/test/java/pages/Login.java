@@ -2,7 +2,9 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import static support.TestContext.getData;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import static support.TestContext.*;
 
 public class Login extends Page {
 
@@ -44,6 +46,12 @@ public class Login extends Page {
 
     @FindBy(xpath = "//*[contains(@class, 'resend-two-factor-code')]")
     private WebElement resendCodeLink;
+
+    @FindBy(xpath = "//input[@name='login_password']")
+    private WebElement verifyPassword;
+
+    @FindBy(xpath = "//div[contains(text(), 'Verify your account')]")
+    private WebElement loginRegisterHeader;
 
 
     public Login fillSignInForm(String path) {
@@ -105,17 +113,21 @@ public class Login extends Page {
         return this;
     }
 
+    public void verifyPassword() {
+        switchToDefaultWindow();
+        getWait(2).until(ExpectedConditions.visibilityOf(loginRegisterHeader));
+        fillTheField(verifyPassword, getData("login").get("password"));
+        click(signInBtn);
+    }
+
 
     public Homepage googleSignIn() {
         click(googleSignInBtn);
         switchToNewWindow();
-        new GoogleSignIn().googleSignIn();
+        new GoogleSignIn()
+                .googleSignIn();
+                //.verifyPassword();
         return new Homepage();
     }
-
-
-
-
-
 
 }

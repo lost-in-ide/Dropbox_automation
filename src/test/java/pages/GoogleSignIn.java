@@ -3,8 +3,8 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static org.testng.Assert.assertTrue;
 import static support.TestContext.getData;
-import static support.TestContext.getWait;
 
 public class GoogleSignIn extends Page {
 
@@ -23,34 +23,38 @@ public class GoogleSignIn extends Page {
     @FindBy(xpath = "//*[@id='headingText']")
     private WebElement accessMessage;
 
-//    @FindBy(xpath = "//*[@id='submit_approve_access']")
-//    private WebElement allowAccessBtn;
-//
-//    @FindBy(xpath = "//*[@id='submit_deny_access']")
-//    private WebElement cancelBtn;
+    @FindBy(xpath = "//*[@class='auth-google button-primary']")
+    private WebElement googleSignInBtn;
 
+    @FindBy(xpath = "//*[@id='submit_approve_access']")
+    private WebElement allowAccessBtn;
+
+    @FindBy(xpath = "//*[@id='submit_deny_access']")
+    private WebElement cancelBtn;
+
+    @FindBy(xpath = "//*[@id='profileIdentifier']")
+    private WebElement account;
 
     @FindBy(xpath = "//*[@id='regular-login-forms']")
     private WebElement loginForm;
 
-    @FindBy(xpath = "//*[@name='login_password']")
-    private WebElement verifyPassword;
-
     @FindBy(xpath = "//*[contains(@class, 'signin-button')]")
     private WebElement signInBtn;
 
-    public void googleSignIn() {
+
+    public Login googleSignIn() {
         fillTheField(emailField, getData("login").get("email"));
         click(emailNextBtn);
         fillTheField(passwordField, getData("login").get("googlePassword"));
         click(passwordNextBtn);
+        try {
+            assertTrue(account.getAttribute("data-email").contains(getData("login").get("email")));
+            click(account);
+        } catch (Exception e) {
+            switchToNewWindow();
+        }
         switchToDefaultWindow();
-        //wait (or page refresh) needed here
-        fillTheField(verifyPassword, getData("login").get("password"));
-        click(signInBtn);
+        return new Login();
+
     }
-
-
-
-
 }
