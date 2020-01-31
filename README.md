@@ -13,8 +13,11 @@ For the security purposes, login.yml has been git ignored, but can be added to /
 The format is the following:
 
 email:
+
 password:
+
 googlePassword:
+
 wrongPassword:
 
 Issues I've encountered so far:
