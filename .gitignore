@@ -1,3 +1,6 @@
 src/test/resources/data/login.yml
 src/test/resources/data/login.yml
 target/test-classes/data/login.yml
+target/**
+.idea/**
+
