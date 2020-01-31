@@ -11,10 +11,14 @@ Three-layer project:
 
 For the security purposes, login.yml has been git ignored, but can be added to /src/test/resources/data/.
 The format is the following:
+
 email:
+
 password:
+
 googlePassword:
-wrongPassword:
+
+wrongPassword:  
 
 Issues I've encountered so far:
 - Project configuration did not glue the "support" from the beginning, had to add it manually
