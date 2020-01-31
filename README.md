@@ -2,7 +2,7 @@
 Personal project, created from scratch
 Includes UI as well as RestAPI automation testing for the Dropbox website.
 
-Stack: Java 11, Maven, Cucumber, POM, RestAssured.
+Stack: Selenium WebDriver, Java 11, Maven, Cucumber, POM, RestAssured.
 
 Three-layer project: 
 1. Easy to read Cucumber scenarios, written in simple Engish language 
