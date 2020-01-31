@@ -59,5 +59,20 @@ public class UIStepdefs {
     }
 
 
+    @Given("I upload {string}")
+    public void iUpload(String filename) {
+        switch(filename) {
+            case "Test.pdf":
+                new Homepage().attachFile(filename);
+                break;
+            default:
+                System.out.println("This feature is not automated yet.");
+        }
+    }
+
+//    @Then("I verify {string} uploaded")
+//    public void iVerifyUploaded(String filename) {
+//
+//    }
 }
 

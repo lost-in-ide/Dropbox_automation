@@ -30,13 +30,3 @@ Feature: UI login
     And I click on "sign in with Google" link
     Then I verify login successful
 
-
-
-
-#  seems to happen only when tested manually, so the following has been removed from test suite:
-
-#  @login_ui6 @smoke
-#  Scenario: Login to non-existing account
-#    And I login to "non-existing" account
-#    Then I verify I am offered to "create" an account
-

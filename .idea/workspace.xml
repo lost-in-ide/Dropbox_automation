@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65047a7d-b215-43d3-8ce9-15fb04490632" name="Default Changelist" comment="UI login completed">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data/config.yml" afterDir="false" />
+    <list default="true" id="65047a7d-b215-43d3-8ce9-15fb04490632" name="Default Changelist" comment="File attachments added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/definitions/UIStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definitions/UIStepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/GoogleSignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/GoogleSignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Homepage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/support/TestContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/support/TestContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui_login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui_login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/definitions/UIStepdefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/definitions/UIStepdefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ui_login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ui_login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/GoogleSignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/GoogleSignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Homepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/Homepage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/support/TestContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/support/TestContext.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,19 +29,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ui_login.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ui_file_actions_Homepage.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="165">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/definitions/UIStepdefs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#676#677#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#807#808#0" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
+                <element signature="e#1337#1338#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/Homepage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="95">
+              <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/GoogleSignIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="810">
               <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -63,22 +82,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/Page.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="615">
               <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2338#2339#0" expanded="true" />
-                <element signature="e#2374#2375#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
+            <state relative-caret-position="1845">
+              <caret line="128" column="32" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,11 +137,15 @@
         <option value="$PROJECT_DIR$/src/test/java/support/Hooks.java" />
         <option value="$PROJECT_DIR$/src/test/java/support/TestContext.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ui_login.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/definitions/UIStepdefs.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/Homepage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/GoogleSignIn.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ui_file_manipulations.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ui_file_manipulations_Files.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ui_file_actions_Files_page.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ui_file_actions_Homepage.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/definitions/UIStepdefs.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/Homepage.java" />
       </list>
     </option>
   </component>
@@ -134,7 +155,9 @@
     <option name="width" value="1440" />
     <option name="height" value="797" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -163,37 +186,6 @@
               <item name="Dropbox" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dropbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dropbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="definitions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dropbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dropbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dropbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dropbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dropbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dropbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -216,6 +208,12 @@
               <item name="Dropbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dropbox" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dropbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dropbox" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-test-sources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Login with valid credentials">
+  <component name="RunManager" selected="Cucumber java.Scenario: I upload file from Homepage">
     <configuration name="Feature: ui_login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui_login.feature" />
@@ -259,6 +257,25 @@
       <module name="Dropbox" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: ui_login" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: I upload file from Homepage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="4" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui_file_actions_Homepage.feature" />
+      <option name="GLUE" value="support definitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="Dropbox" />
+      <option name="NAME_FILTER" value="^I upload file from Homepage$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^I upload file from Homepage$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: I upload file from Homepage" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -278,25 +295,6 @@
       <option name="NAME_FILTER" value="^Login to non\-existing account$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Login to non\-existing account$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Login to non-existing account" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Login with invalid password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui_login.feature" />
-      <option name="GLUE" value="support definitions" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="Dropbox" />
-      <option name="NAME_FILTER" value="^Login with invalid password$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Login with invalid password$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login with invalid password" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -349,16 +347,16 @@
       <item itemvalue="Cucumber java.Feature: ui_login" />
       <item itemvalue="Cucumber java.Scenario: Login with valid credentials" />
       <item itemvalue="Cucumber java.Scenario: Sign in with Google" />
-      <item itemvalue="Cucumber java.Scenario: Login with invalid password" />
       <item itemvalue="Cucumber java.Scenario: Login to non-existing account" />
+      <item itemvalue="Cucumber java.Scenario: I upload file from Homepage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Login with valid credentials" />
+        <item itemvalue="Cucumber java.Scenario: I upload file from Homepage" />
         <item itemvalue="Cucumber java.Feature: ui_login" />
-        <item itemvalue="Cucumber java.Scenario: Login to non-existing account" />
+        <item itemvalue="Cucumber java.Scenario: Login with valid credentials" />
         <item itemvalue="Cucumber java.Scenario: Sign in with Google" />
-        <item itemvalue="Cucumber java.Scenario: Login with invalid password" />
+        <item itemvalue="Cucumber java.Scenario: Login to non-existing account" />
       </list>
     </recent_temporary>
   </component>
@@ -380,39 +378,53 @@
       <option name="project" value="LOCAL" />
       <updated>1579808279928</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="UI login completed">
+      <created>1579838122114</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579838122114</updated>
+    </task>
+    <task id="LOCAL-00003" summary="File attachments started">
+      <created>1580431295302</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580431295302</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Sign_in_with_Google - 2020.01.23 at 19h 29m 15s.xml">
-      <configuration name="Scenario: Sign in with Google" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_upload_file_from_Homepage - 2020.01.27 at 20h 05m 22s.xml">
+      <configuration name="Scenario: I upload file from Homepage" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Sign_in_with_Google - 2020.01.23 at 19h 30m 09s.xml">
-      <configuration name="Scenario: Sign in with Google" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_upload_file_from_Homepage - 2020.01.27 at 20h 07m 17s.xml">
+      <configuration name="Scenario: I upload file from Homepage" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__ui_login - 2020.01.23 at 19h 32m 01s.xml">
+    <history-entry file="Feature__ui_login - 2020.01.30 at 12h 13m 37s.xml">
       <configuration name="Feature: ui_login" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Sign_in_with_Google - 2020.01.23 at 19h 34m 20s.xml">
-      <configuration name="Scenario: Sign in with Google" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_upload_file_from_Homepage - 2020.01.30 at 12h 14m 16s.xml">
+      <configuration name="Scenario: I upload file from Homepage" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Sign_in_with_Google - 2020.01.23 at 19h 35m 46s.xml">
-      <configuration name="Scenario: Sign in with Google" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_upload_file_from_Homepage - 2020.01.30 at 12h 18m 12s.xml">
+      <configuration name="Scenario: I upload file from Homepage" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__ui_login - 2020.01.23 at 19h 37m 59s.xml">
-      <configuration name="Feature: ui_login" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_upload_file_from_Homepage - 2020.01.30 at 12h 20m 06s.xml">
+      <configuration name="Scenario: I upload file from Homepage" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Login_to_non-existing_account - 2020.01.23 at 19h 39m 53s.xml">
-      <configuration name="Scenario: Login to non-existing account" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_upload_file_from_Homepage - 2020.01.30 at 12h 21m 19s.xml">
+      <configuration name="Scenario: I upload file from Homepage" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__ui_login - 2020.01.23 at 19h 43m 22s.xml">
-      <configuration name="Feature: ui_login" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_upload_file_from_Homepage - 2020.01.30 at 12h 28m 08s.xml">
+      <configuration name="Scenario: I upload file from Homepage" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Login_with_valid_credentials - 2020.01.23 at 19h 51m 21s.xml">
-      <configuration name="Scenario: Login with valid credentials" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_upload_file_from_Homepage - 2020.01.30 at 12h 30m 12s.xml">
+      <configuration name="Scenario: I upload file from Homepage" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Login_with_valid_credentials - 2020.01.23 at 19h 51m 49s.xml">
-      <configuration name="Scenario: Login with valid credentials" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_upload_file_from_Homepage - 2020.01.30 at 12h 35m 39s.xml">
+      <configuration name="Scenario: I upload file from Homepage" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -426,9 +438,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="23" y="23" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17811158" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26466382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -437,14 +448,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.77253217" visible="true" weight="0.398827" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.77253217" weight="0.42375368" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4281525" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" weight="0.34604105" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.2274678" side_tool="true" weight="0.37829912" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.68526465" visible="true" weight="0.34604105" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.31473532" side_tool="true" visible="true" weight="0.34604105" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49928468" weight="0.32991204" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49928468" weight="0.32991204" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -488,7 +499,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Removed dependencies + ui_login fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed dependencies + ui_login fixes" />
+    <MESSAGE value="UI login completed" />
+    <MESSAGE value="File attachments started" />
+    <option name="LAST_COMMIT_MESSAGE" value="File attachments started" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Dropbox$Scenario__.ic" NAME="Scenario:  Coverage Results" MODIFIED="1579314639365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -526,9 +539,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ui_signup.feature">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/support/RestWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -597,37 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/definitions/UIStepdefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="45" lean-forward="true" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ui_login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Homepage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/data/login.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -635,9 +614,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ui_signup.feature">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ui_file_actions_Files_page.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/GoogleSignIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="810">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -647,20 +636,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/Page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="615">
           <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2338#2339#0" expanded="true" />
-            <element signature="e#2374#2375#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
+        <state relative-caret-position="1845">
+          <caret line="128" column="32" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ui_login.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ui_file_actions_Homepage.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/definitions/UIStepdefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Homepage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
