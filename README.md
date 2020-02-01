@@ -10,18 +10,13 @@ Three-layer project:
 3. Page Objects, Configurations, etc, where all the magic actually happens :)
 
 For the security purposes, login.yml has been git ignored, but can be added to /src/test/resources/data/.
-The format is the following:
-
-email:
-
-password:
-
-googlePassword:
-
+The format is the following:<br>
+email:<br>
+password: <br>
+googlePassword: <br>
 wrongPassword:
 
 
 Issues I've encountered so far:
 - Project configuration did not glue the "support" from the beginning, had to add it manually
-- Attach file button is made with <div> tag, figuring out how to deal with that using WebDriver
-
+- Attach file button is made with div tag, figuring out how to deal with that using WebDriver
