@@ -9,7 +9,7 @@ Three-layer project:
 2. Step Definitions - a mid-layer that beginners in coding can understand
 3. Page Objects, Configurations, etc, where all the magic actually happens :)
 
-For the security purposes, login.yml has been git ignored, but can be added to /src/test/resources/data/.
+For the security purposes, login.yml has been git ignored, but can be added to /src/test/resources/data/.<br>
 The format is the following:<br>
 email:<br>
 password: <br>
