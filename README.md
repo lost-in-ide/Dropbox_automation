@@ -20,4 +20,4 @@ wrongPassword: ""
 Issues I've encountered so far:
 - Project configuration did not glue the "support" from the beginning, had to add it manually
 - Attach file button is made with div tag, figuring out how to deal with that using WebDriver
-- Learning whatever it takes to make hidden web elements visible
+- Learning whatever it takes to make hidden web elements visible: z-index and other css properties, inheritance, etc.
