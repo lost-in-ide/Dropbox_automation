@@ -56,4 +56,38 @@ public class Page {
     public void fillTheField(WebElement field, String data) {
         field.sendKeys(data);
     }
+
+    public void makeElementVisible(String type, WebElement element) {
+        switch(type) {
+            case "folder":
+                getExecutor().executeScript(getData("jsscripts").get("removeDisplay"), element);
+                getExecutor().executeScript(getData("jsscripts").get("addBackground"), element);
+                getExecutor().executeScript(getData("jsscripts").get("addPosition"), element);
+                getExecutor().executeScript(getData("jsscripts").get("addZindex"), element);
+                break;
+            case "file":
+                getExecutor().executeScript(getData("jsscripts").get("addZindex"), element);
+                getExecutor().executeScript(getData("jsscripts").get("addBackground"), element);
+                getExecutor().executeScript(getData("jsscripts").get("removeOpacity"), element);
+                getExecutor().executeScript(getData("jsscripts").get("removeHeight"), element);
+                getExecutor().executeScript(getData("jsscripts").get("removeWidth"), element);
+                getExecutor().executeScript(getData("jsscripts").get("removeFontSize"), element);
+                break;
+            case "parent":
+                getExecutor().executeScript(getData("jsscripts").get("removeOverflow"), element);
+                getExecutor().executeScript(getData("jsscripts").get("removeZindex"), element);
+                break;
+            case "grandparent":
+                getExecutor().executeScript(getData("jsscripts").get("removeDisplay"), element);
+                break;
+            default:
+                System.out.println("Can not make element visible");
+        }
+
+
+
+        assert element.isEnabled(): "Element is not enabled";
+    }
+
+
 }

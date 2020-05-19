@@ -1,5 +1,6 @@
 package pages;
 
+import cucumber.api.java8.Th;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -64,34 +65,75 @@ public class Homepage extends Page {
     @FindBy(xpath = "//*[contains(@class, 'snackbar-title') and contains(text(), 'Uploaded')]")
     private WebElement uploadedConfirmation;
 
+    @FindBy(xpath = "//*[contains(@class, 'file-uploader')]/../input[@type='file']")
+    private WebElement hiddenUploadFolder;
+
+    @FindBy(xpath = "//input[@type='file'][contains(@id, 'html')]")
+            //(xpath = "//*[contains(@id, 'html')]/input[@type='file']")
+    private WebElement hiddenUploadFile;
+
+    @FindBy(xpath = "//*[contains(@class, 'buttons')]//span[contains(text(), 'Upload')]/..")
+            //(xpath = "//span[contains(text(), 'Upload')]/..")
+    private WebElement uploadFolder;
+
+    @FindBy(xpath="//div[@aria-label='Upload to…']")
+    private WebElement uploadModal;
+
+    @FindBy(xpath = "//*[@id='flash-upload-container']")
+    private WebElement fileUploadContainer;
+
+    @FindBy(xpath = "//*[contains(@id, 'container') and contains(@id, 'html5')]")
+    private WebElement uploadFileParent;
+
+
+
 
     public boolean isLoggedIn() {
         try {
-            getWait(2).until(ExpectedConditions.stalenessOf(accountMenu));
-        } catch (TimeoutException e) {
+            getWait(5).until(ExpectedConditions.stalenessOf(accountMenu));
+        } catch (Exception e) {
             getWait(2).until(ExpectedConditions.elementToBeClickable(accountMenu));
         }
         return accountMenu.isDisplayed();
 }
 
-    public Homepage attachFile(String filename) {
-        String attachment = System.getProperty("user.dir") + "/src/test/resources/data/" + filename;
+//trying to make it visible to see the behavior
+    public Homepage attachFile(String filename) throws InterruptedException {
+        String attachment = System.getProperty("user.dir") + "/src/test/resources/uploads/" + filename;
+        /* make visible first:
+        1. remove display:none from the grandparent
+        2. remove overflow:hidden and z-index:0 from the parent
+        3. remove opacity:0, font-size:999px, width:100% and height:100% from the element itself
+        4. add background:red and z-index:100 to the element
+        */
 
-        //upload File button is coded into <div> tag. Figuring out if there is a way to deal with it with WebDriver
-
-//        click(uploadFileBtn);
-//        uploadFileBtn.sendKeys(attachment);
-//        getWait(2).until(ExpectedConditions.visibilityOf(uploadToPopup));
-//        click(uploadBtn);
+        makeElementVisible("file", hiddenUploadFile);
+        makeElementVisible("parent", uploadFileParent);
+        makeElementVisible("grandparent", fileUploadContainer);
+        hiddenUploadFile.sendKeys(attachment);
+        click(uploadFolder);
+        getWait(10).until(ExpectedConditions.visibilityOf(uploadedConfirmation));
         return new Homepage();
     }
 
-//    public Homepage verifyThatUploaded(String name) {
-//
-//        return new Homepage();
-//    }
+    //works fine
+    public Homepage attachFolder() {
+        String attachment = System.getProperty("user.dir") + "/src/test/resources/uploads/";
+        //make visible first
+        makeElementVisible("folder", hiddenUploadFolder);
+        hiddenUploadFolder.sendKeys(attachment);
+        getWait(2000).until(ExpectedConditions.visibilityOf(uploadModal));
+        getWait(2000).until(ExpectedConditions.elementToBeClickable(uploadFolder));
+        click(uploadFolder);
+        getWait(5000).until(ExpectedConditions.visibilityOf(uploadedConfirmation));
+        return new Homepage();
+    }
 
 
+    public boolean isUploaded(String filename) {
+        click(filesLink);
+        return new Files().isMatchFound(filename);
+    }
 
 
 }

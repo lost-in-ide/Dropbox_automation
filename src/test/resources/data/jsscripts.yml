@@ -1,0 +1,11 @@
+removeDisplay: "arguments[0].style.removeProperty('display')"
+removeOpacity: "arguments[0].style.removeProperty('opacity')"
+removeHeight: "arguments[0].style.removeProperty('height')"
+removeWidth: "arguments[0].style.removeProperty('width')"
+removeFontSize: "arguments[0].style.removeProperty('font-size')"
+removeZindex: "arguments[0].style.removeProperty('z-index')"
+removeOverflow: "arguments[0].style.removeProperty('overflow')"
+
+addPosition: "arguments[0].style.setProperty('position', 'relative')"
+addBackground: "arguments[0].style.setProperty('background', 'red')"
+addZindex: "arguments[0].style.setProperty('z-index', 10)"
